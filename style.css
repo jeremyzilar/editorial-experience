@@ -1,0 +1,123 @@
+/*
+Theme Name: Park Slope Food Coop
+Theme URI: http://new.foodcoop.com
+Description: A long distance exploration of community.
+Version: 2.0
+Author: Matt Klienman, Jeremy Zilar
+Author URI: http://foodcoop.com/
+*/
+
+
+/*FONTS
+"adelle"
+"adelle-sans"
+"franklin-gothic-urw"
+*/
+
+
+body {
+  background:rgba(205,217,113,.3);
+  background:#efefef;
+  background:#fff;
+  font-family: "adelle" serif;
+  color:#333;
+}
+
+a{
+  color:#333;
+}
+
+
+.container{
+  max-width:750px;
+}
+
+
+/*HEAD*/
+.jumbotron{
+  margin-top:40px
+}
+.jumbotron h1{
+  font-size:51px;
+  font-weight:800;
+  color:#0e2d0c;
+}
+.jumbotron h1 a{
+  color:#12370e;
+}
+
+
+
+/*ENTRY*/
+
+.entry{
+  margin:40px 0;
+  padding:40px 0;
+}
+.entry:first-child{
+  margin-top:0;
+}
+.entry p{
+  font-size:16px;
+  line-height:24px;
+}
+
+.entry .kicker{
+  margin:0 0 10px 0;
+  font-size:14px;
+  font-weight:700;
+}
+.entry .kicker a{
+  color:#47a447;
+}
+.entry-title{
+  margin-top:0;
+  font-family: "adelle-sans", serif;
+  font-family: "adelle" serif;
+  font-weight:700;
+}
+
+/*Draft Posts*/
+.status-draft{
+  background:rgba(247, 198, 5, 0.35);
+}
+
+/*Entry Meta*/
+.entry-meta .date{
+  color:#b9b5b5;
+  font-size:13px;
+  font-family: 'adelle-sans', serif;
+}
+.btn-edit{
+  margin-left:5px;
+  font-family: 'adelle-sans', serif;
+}
+
+/*IMAGES*/
+.photo{
+  margin-bottom:25px;
+  font-family: "adelle-sans", serif;
+}
+.photo img{
+  margin-bottom:2px;
+}
+.photo .credit{
+  color:#999;
+  font-size:13px
+  text-align: right;
+}
+.photo .caption{
+  color:#999;
+  font-size:13px
+}
+
+
+/*Footer*/
+#footer{
+  padding: 40px;
+  font-family: "adelle-sans", serif;
+  background:#efefef;
+}
+#footer p{
+  font-size:13px;
+}
