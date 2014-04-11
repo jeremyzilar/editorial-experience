@@ -72,12 +72,18 @@ a{
 }
 .entry-title{
   margin-top:0;
-  font-family: "adelle-sans", serif;
+  font-family: "adelle-sans", sans-serif;
   font-family: "adelle" serif;
   font-weight:700;
 }
 
 /*Draft Posts*/
+.status-label{
+  margin-right:3px;
+  font-family: "adelle-sans", sans-serif;
+  text-transform:uppercase;
+  font-size:13px;
+}
 .status-draft{
   background:rgba(247, 198, 5, 0.35);
 }

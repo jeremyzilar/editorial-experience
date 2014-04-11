@@ -72,7 +72,7 @@ function psfc_get_kicker_save($post_id) {
 }
 
 function psfc_get_kicker_dropdown() {
-	return get_terms('category', array(	'fields'     => 'names', 
+	return get_terms('category', array(	'fields'     => 'names',
 										'orderby'    => 'name',
 										'hide_empty' => 0)
 					);
@@ -97,24 +97,31 @@ function psfc_get_kicker($post_id = 0, $default = false) {
 
 function psfc_the_kicker($img = true) {
 	$p_id = get_the_ID();
-	
 	if(empty($p_id))
 		return;
-	
+
     $kicker = psfc_get_kicker();
+		$status = get_post_status();
+		$s = '<span class="status-label">' . $status . '</span>';
+		if ($status !== 'draft') {
+			$s = '';
+		}
 
-    if(empty($kicker))
-        return;
+    if(empty($kicker) && empty($status))
+      return;
 
+		$k = '';
     if(!empty($kicker)) {
       $kicker_term = get_term_by('name', $kicker, 'category');
       if(!empty($kicker_term) && is_object($kicker_term)){
         $kicker_link = get_category_link($kicker_term->term_id);
-     		echo <<<EOF
-          <h6 class="kicker"><a href="$kicker_link" title="$kicker">$kicker</a></h6>
-EOF;
+				$k = '<a href="'.$kicker_link.'" title="'.$kicker.'">'.$kicker.'</a>';
       }
     }
+
+		echo <<<EOF
+		<h6 class="kicker">$s $k</h6>
+EOF;
 }
 
 function add_kicker_meta_box() {
@@ -123,7 +130,7 @@ function add_kicker_meta_box() {
   foreach( $types as $type ) {
     add_meta_box( 'psfc_kicker_div', 'Kicker', 'psfc_kicker_meta', $type, 'side', 'high');
   }
-	
+
 }
 add_action('save_post', 'psfc_get_kicker_save', 0);
 add_action('add_meta_boxes', 'add_kicker_meta_box');
