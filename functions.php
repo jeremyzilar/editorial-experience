@@ -16,6 +16,13 @@ include_once 'functions/kicker.php';
 $tdir = get_template_directory_uri();
 define('TDIR', $tdir);
 
+$root = get_template_directory();
+define('ROOT', $root);
+
+// Includes Path
+$inc = $root . '/inc/';
+define('INC', $inc);
+
 // The Common Grid — used in multiple places
 $grid = 'entry-box col-lg-10 col-md-8 col-sm-9 col-md-offset-1 col-sm-offset-1';
 define('GRID', $grid);
@@ -34,20 +41,25 @@ add_theme_support( 'infinite-scroll', array(
 ) );
 add_theme_support( 'post-thumbnails' );
 
+// Register a Menu
+function psfc_register_menu() {
+  register_nav_menu('main-menu',__( 'Main Menu' ));
+}
+add_action( 'init', 'psfc_register_menu' );
+
+
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+function special_nav_class($classes, $item){
+	if( in_array('current-menu-item', $classes) ){
+		$classes[] = 'active ';
+	}
+	return $classes;
+}
+
 
 
 if (!is_admin()) {
-	// Add Custom Post Types to Query
-	add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
-	function add_my_post_types_to_query( $query ) {
-		if ($query->is_main_query() && $query->is_home() || $query->is_feed() || $query->is_paged() || $query->is_category()) {
-			$query->set(
-				'post_type', array('post')
-			);
-		}
-	}
-
-
 	// If Logged In, Add DRAFTS to Query
 	if ( is_user_logged_in() ) {
 		add_action( 'pre_get_posts', 'add_my_post_status_to_query' );
