@@ -8,9 +8,7 @@ Author URI: http://silencematters.com/
 */
 
 /*FONTS
-"adelle"
-"adelle-sans"
-"franklin-gothic-urw"
+font-family: "nimbus-sans";
 */
 
 
@@ -18,7 +16,8 @@ body {
   background:rgba(205,217,113,.3);
   background:#efefef;
   background:#fff;
-  font-family: "adelle" serif;
+/*  background:salmon;*/
+  font-family: "nimbus-sans" sans-serif;
   color:#333;
 }
 
@@ -26,20 +25,56 @@ a{
   color:#333;
 }
 
+section{
+  padding:80px 0;
+}
 
 .container{
-  max-width:750px;
+/*  max-width:900px;*/
 }
 
 
 /*NAVIGATION*/
 .navbar{
-  margin-top:20px;
   margin-bottom:5px;
-  font-family: "adelle-sans", sans-serif;
+  font-family: "nimbus-sans" sans-serif;
+  min-height:36px;
+  border:none;
+}
+.navbar-brand{
+  font-size:15px;
+  font-weight:800;
+  height:36px;
+}
+.navbar-brand,
+.navbar li a{
+  padding-top:8px;
+  padding-bottom:8px;
+}
+/*HEAD*/
+
+#head{
+/*  padding-top:0;*/
 }
 
-/*HEAD*/
+#head h1{
+  font-size:40px;
+  font-weight:900;
+}
+#head .lead{
+  font-size:28px;
+  font-weight:600;
+}
+
+#head .blurb{
+  font-size:18px;
+  width:75%;
+}
+
+.banner{
+  width:100%;
+}
+
 .jumbotron{
   margin-top:0px;
 }
@@ -53,6 +88,25 @@ a{
 }
 
 
+/*Authors*/
+.interview{
+  margin-bottom:50px;
+}
+.interview img{
+  margin-right:18px;
+  width:75px;
+  float:left;
+  border-radius:75px;
+}
+.interview h3{
+  margin-top:0;
+  margin-bottom:5px;
+  font-size:16px;
+  font-weight:800;
+}
+.interview p{
+  margin-bottom:0;
+}
 
 /*ENTRY*/
 
@@ -80,7 +134,7 @@ a{
   margin-top:0;
   margin-bottom:20px;
   font-family: "adelle-sans", sans-serif;
-  font-family: "adelle" serif;
+  font-family: "nimbus-sans" sans-serif;
   font-weight:700;
 }
 

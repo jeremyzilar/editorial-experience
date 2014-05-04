@@ -13,8 +13,8 @@
 
   <!-- Typekit -->
   <!-- Registered with jc [at] juliettecezzar.com -->
-	<script type="text/javascript" src="//use.typekit.net/sjx7idt.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="//use.typekit.net/pzy6bux.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 
 	<link rel="me" href="https://twitter.com/jeremyzilar" />
@@ -33,4 +33,7 @@
 <!-- All good things start here -->
 
 <body <?php body_class(); ?>>
+  <?php include(INC . 'navbar.php'); ?>
   <?php include 'head.php'; ?>
+  <?php include 'interviews.php'; ?>
+  <?php include 'authors.php'; ?>

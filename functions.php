@@ -10,6 +10,7 @@ include_once 'functions/images.php';
 include_once 'functions/related-link.php';
 include_once 'functions/art-direction.php';
 include_once 'functions/kicker.php';
+include_once 'functions/interviews.php';
 
 
 // Variables
