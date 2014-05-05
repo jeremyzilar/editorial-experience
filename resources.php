@@ -36,7 +36,8 @@
 
                 $resource_url = '';
                 $resource_url = get_post_meta( get_the_ID(), 'resource_url', true );
-                $resource_html = '<p class="url"><a href="'.$resource_url.'"><img src="http://www.google.com/s2/favicons?domain='.$resource_url.'"/><span>'.substr($resource_url,0,50).'...';$resource_url.'</span></a></p>';
+                $resource_url_short = substr($resource_url,0,50).'...';
+                $resource_html = '<p class="url"><a href="'.$resource_url.'"><img src="http://www.google.com/s2/favicons?domain='.$resource_url.'"/><span>'. $resource_url_short .'</span></a></p>';
 
                 $resource_name = '<h5><a href="'.$resource_url.'" title="'.$name.'">'.$name.'</a></h5>';
 

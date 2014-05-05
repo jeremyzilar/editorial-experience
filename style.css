@@ -169,6 +169,16 @@ section{
 .resource .url img{
   margin-right:6px;
 }
+
+/*Authors*/
+.author-bios{
+  margin:60px 0;
+}
+.author-bios h4{
+  font-weight:700;
+}
+
+
 /*ENTRY*/
 
 .entry{
