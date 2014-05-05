@@ -174,10 +174,17 @@ section{
 .author-bios{
   margin:60px 0;
 }
-.author-bios h4{
+.author-bio {
+  margin-bottom:40px;
+}
+.author-bio h4{
+  margin-top:0;
   font-weight:700;
 }
-
+.author-bio h4 span{
+  font-size:14px;
+  font-weight:500;
+}
 
 /*ENTRY*/
 

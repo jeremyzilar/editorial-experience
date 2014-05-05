@@ -1,3 +1,6 @@
+<?php include 'resources.php'; ?>
+<?php include 'authors.php'; ?>
+
   <section id="footer">
     <div class="container">
       <div class="row">
