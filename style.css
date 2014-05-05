@@ -39,15 +39,34 @@ section{
   border:none;
   background:#fac946;
 }
-.navbar-brand{
+.navbar .navbar-brand{
   font-size:15px;
   font-weight:800;
   height:36px;
+  color:#333;
 }
 .navbar-brand,
-.navbar li a{
+.navbar .navbar-nav li a{
   padding-top:8px;
   padding-bottom:8px;
+  color:#555;
+  font-weight:600;
+}
+.navbar .navbar-nav li a:hover{
+  color:#333;
+  background:rgba(255, 255, 255, 0.5);
+}
+.navbar .navbar-nav li a.btn-buy{
+  margin:4px 0 0 8px;
+  padding:4px 10px;
+  background:rgba(244, 0, 117, 0.65);
+  font-size:14px;
+  font-weight:600;
+  border:none;
+  color:#fff;
+}
+.navbar .navbar-nav li a.btn-buy:hover{
+  background:#f2006c;
 }
 /*HEAD*/
 
@@ -114,14 +133,32 @@ section{
 
 
 /*Resources*/
-
-.resource{}
-.resource h4{
-  margin-bottom:0;
+.resource-group{
+  margin-top:50px;
+}
+#resources h4{
+  padding:0 15px;
+  text-transform:uppercase;
+  font-weight:400;
+}
+.resource{
+  margin-bottom:15px;
+}
+.resource h5{
+  margin-bottom:8px;
   font-weight:700;
+  font-size:16px;
+}
+.resource .desc{
+  color:#666;
+}
+.resource .url a{
+  color:#2a6496;
 }
 
-
+.resource .url img{
+  margin-right:6px;
+}
 /*ENTRY*/
 
 .entry{

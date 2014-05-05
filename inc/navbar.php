@@ -38,6 +38,7 @@
         <li><a href="#">Authors</a></li>
         <li><a href="#">Resources</a></li>
         <li><a href="#">Blog</a></li>
+				<li><a href="#" class="btn btn-buy btn-xs btn-success">Buy the Book</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
