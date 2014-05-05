@@ -1,5 +1,5 @@
 <?php
-
+// Custom post type
 add_action('init', 'cptui_register_my_cpt_resource');
 function cptui_register_my_cpt_resource() {
 register_post_type('resource', array(
@@ -34,6 +34,7 @@ register_post_type('resource', array(
 ) ); }
 
 
+// Taxonomy
 add_action('init', 'cptui_register_my_taxes_resource');
 function cptui_register_my_taxes_resource() {
 register_taxonomy( 'resource',array (

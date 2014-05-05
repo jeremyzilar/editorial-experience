@@ -6,8 +6,19 @@
         <div class="row">
           <?php
 
+            $taxonomy_objects = get_object_taxonomies( 'resource', 'objects' );
+   print_r( $taxonomy_objects);
+
             $counter = 0;
-            $args = array( 'post_type' => 'resource', 'posts_per_page' => -1 );
+            $args = array(
+              'post_type' => 'resource',
+              'posts_per_page' => -1,
+              'tax_query' => array(
+            		array(
+            			'taxonomy' => 'resource',
+            			'terms' => 'typography, web-and-mobile-design'
+            		)
+	            ));
 
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post();
