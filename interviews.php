@@ -25,16 +25,16 @@
                 $interview_bio = '<p class="bio">'.$interview_bio.'</p>';
               }
 
-              $interview_twitter = get_post_meta( get_the_ID(), 'interview_twitter', true );
-              $interview_twitter_handle = str_replace('http://twitter.com/','', $interview_twitter);
+              $interview_twitter_url = get_post_meta( get_the_ID(), 'interview_twitter', true );
+              $interview_twitter_handle = str_replace('http://twitter.com/','', $interview_twitter_url);
               $interview_twitter_handle = str_replace('https://twitter.com/','', $interview_twitter_handle);
-              if (!empty($interview_twitter)) {
-                $interview_twitter = '<p class="twitter"><a href="'.$interview_twitter.'">@'.$interview_twitter_handle.'</a></p>';
+              if (!empty($interview_twitter_url)) {
+                $interview_twitter = '<p class="twitter"><a href="'.$interview_twitter_url.'">@'.$interview_twitter_handle.'</a></p>';
               }
 
               $interview_url = get_post_meta( get_the_ID(), 'interview_url', true );
               if (empty($interview_url)) {
-                $interview_url = $interview_twitter;
+                $interview_url = $interview_twitter_url;
               }
               $interview_name = '<h3><a href="'.$interview_url.'" title="'.$name.'">'.$name.'</a></h3>';
               if (empty($interview_twitter) || empty($interview_url)) {
