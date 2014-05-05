@@ -2,25 +2,51 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
+        <div class="row">
 
         <?php
-          $args = array( 'post_type' => 'interview', 'posts_per_page' => -1 );
+          $counter = 0;
+          $items = wp_get_nav_menu_items( 'interviews' );
+          $interviews = array();
+          foreach ($items as $item) {
+            $n = $item->object_id;
+            $interviews[] = $n;
+          }
+
+          // print_r($items);
+          // print_r($interviews);
+          $args = array( 'post_type' => 'interview', 'post__in' => $interviews, 'orderby' => 'post__in', 'posts_per_page' => -1 );
           $loop = new WP_Query( $args );
           while ( $loop->have_posts() ) : $loop->the_post();
             $name = get_the_title();
             $interview_bio = get_post_meta( get_the_ID(), 'interview_bio', true );
             $interview_twitter = get_post_meta( get_the_ID(), 'interview_twitter', true );
+            $interview_twitter_handle = str_replace('http://twitter.com/','', $interview_twitter);
+            $interview_twitter_handle = str_replace('https://twitter.com/','', $interview_twitter_handle);
+
+            if (has_post_thumbnail( $post->ID ) ) {
+              $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+              $image = $image[0];
+            } else {
+              $image = TDIR . '/img/bear.jpg';
+            }
+
             echo <<<EOF
             <div class="interview col-lg-4">
-              <img src="http://placehold.it/150x150/999999/333333/" class="img-responsive" alt="" />
+              <img src="$image" class="img-responsive" alt="" />
               <h3><a href="$interview_twitter" title="$name">$name</a></h3>
               <p class="bio">$interview_bio</p>
-              <p class="twitter"><a href="$interview_twitter">$interview_twitter</a></p>
+              <p class="twitter"><a href="$interview_twitter">@$interview_twitter_handle</a></p>
             </div>
 EOF;
+
+            if(++$counter % 3 === 0){
+              echo '</div>';
+              echo '<div class="row">';
+            }
           endwhile;
         ?>
-
+        </div>
 
         <div class="row">
           <div class="interview col-lg-4">

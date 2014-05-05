@@ -5,7 +5,7 @@ function cptui_register_my_cpt_interview() {
 register_post_type('interview', array(
 'label' => 'Interviews',
 'description' => '',
-'public' => false,
+'public' => true,
 'show_ui' => true,
 'show_in_menu' => true,
 'capability_type' => 'page',
@@ -91,7 +91,7 @@ function interview( $post )
     </p>
 
     <p>
-      <label for="interview_twitter">Twitter</label><br />
+      <label for="interview_twitter">Twitter URL</label><br />
       <input type="text" name="interview_twitter" id="interview_twitter" value="<?php echo $twitter; ?>" /><br />
       <small>e.g. https://twitter.com/jeremyzilar</small>
     </p>

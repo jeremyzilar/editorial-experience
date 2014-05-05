@@ -2,7 +2,10 @@
   <div class="container">
 
     <div class="col-lg-4">
-      <img src="http://juliettecezzar.com/_lib/images/author_i/ex/edex02.jpg" class="img-responsive" alt="" />
+
+      <img src="<?php echo TDIR; ?>/img/book/edex_01.jpg" class="img-responsive" alt="" />
+
+
     </div>
 
     <div class="col-lg-8">
