@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
-        <h2>Resources</h2>
+        <h2 class="heading">Resources</h2>
         <div class="row resource-group">
           <?php
             $taxonomy_objects = get_object_taxonomies( 'resource', 'objects' );

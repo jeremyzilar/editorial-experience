@@ -2,9 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
+        <h2 class="heading">Interviews</h2>
         <div class="row">
-          <h2>Interviews</h2>
-
           <?php
             $counter = 0;
             $items = wp_get_nav_menu_items( 'interviews' );

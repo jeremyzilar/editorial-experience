@@ -30,6 +30,13 @@ section{
 /*  max-width:900px;*/
 }
 
+.heading{
+  margin-bottom:75px;
+  font-size:30px;
+  font-weight:900;
+  text-align: center;
+}
+
 
 /*NAVIGATION*/
 .navbar{
@@ -133,6 +140,9 @@ section{
 
 
 /*Resources*/
+#resources{
+  background:rgba(255, 61, 27, 0.40);
+}
 .resource-group{
   margin-top:50px;
 }
@@ -184,7 +194,6 @@ section{
 .entry-title{
   margin-top:0;
   margin-bottom:20px;
-  font-family: "adelle-sans", sans-serif;
   font-family: "nimbus-sans" sans-serif;
   font-weight:700;
 }
@@ -192,7 +201,6 @@ section{
 /*Draft Posts*/
 .status-label{
   margin-right:3px;
-  font-family: "adelle-sans", sans-serif;
   text-transform:uppercase;
   font-size:13px;
 }
@@ -204,17 +212,14 @@ section{
 .entry-meta .date{
   color:#b9b5b5;
   font-size:13px;
-  font-family: 'adelle-sans', serif;
 }
 .btn-edit{
   margin-left:5px;
-  font-family: 'adelle-sans', serif;
 }
 
 /*IMAGES*/
 .photo{
   margin-bottom:25px;
-  font-family: "adelle-sans", serif;
 }
 .photo img{
   margin-bottom:2px;
@@ -233,7 +238,6 @@ section{
 /*Footer*/
 #footer{
   padding: 40px;
-  font-family: "adelle-sans", serif;
   background:#efefef;
 }
 #footer p{
