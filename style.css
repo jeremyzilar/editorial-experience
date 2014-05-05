@@ -26,7 +26,7 @@ a{
 }
 
 section{
-  padding:80px 0;
+  padding:50px 0;
 }
 
 .container{
@@ -54,7 +54,7 @@ section{
 /*HEAD*/
 
 #head{
-/*  padding-top:0;*/
+  padding:50px 0;
 }
 
 #head h1{
@@ -91,6 +91,9 @@ section{
 /*Authors*/
 #interviews{
   background:#e4eaea;
+  background:#E0EBFF;
+  background:#C2D6FF;
+  background:#CEDEFF;
 }
 .interview{
   margin-bottom:50px;
@@ -110,6 +113,16 @@ section{
 .interview p{
   margin-bottom:0;
 }
+
+
+/*Resources*/
+
+.resource{}
+.resource h4{
+  margin-bottom:0;
+  font-weight:700;
+}
+
 
 /*ENTRY*/
 

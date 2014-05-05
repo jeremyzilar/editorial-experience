@@ -34,6 +34,33 @@ register_post_type('resource', array(
 ) ); }
 
 
+add_action('init', 'cptui_register_my_taxes_resource');
+function cptui_register_my_taxes_resource() {
+register_taxonomy( 'resource',array (
+  0 => 'resource',
+),
+array( 'hierarchical' => true,
+	'label' => 'Resource Types',
+	'show_ui' => true,
+	'query_var' => true,
+	'show_admin_column' => true,
+	'labels' => array (
+  'search_items' => 'Resource Type',
+  'popular_items' => '',
+  'all_items' => '',
+  'parent_item' => '',
+  'parent_item_colon' => '',
+  'edit_item' => '',
+  'update_item' => '',
+  'add_new_item' => '',
+  'new_item_name' => '',
+  'separate_items_with_commas' => '',
+  'add_or_remove_items' => '',
+  'choose_from_most_used' => '',
+)
+) );
+}
+
 
 
 
