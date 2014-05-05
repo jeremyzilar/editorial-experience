@@ -20,11 +20,12 @@
             while ( $loop->have_posts() ) : $loop->the_post();
               $name = get_the_title();
 
+              $interview_bio = '';
               $interview_bio = get_post_meta( get_the_ID(), 'interview_bio', true );
               if (!empty($interview_bio)) {
                 $interview_bio = '<p class="bio">'.$interview_bio.'</p>';
               }
-
+              $interview_twitter = '';
               $interview_twitter_url = get_post_meta( get_the_ID(), 'interview_twitter', true );
               $interview_twitter_handle = str_replace('http://twitter.com/','', $interview_twitter_url);
               $interview_twitter_handle = str_replace('https://twitter.com/','', $interview_twitter_handle);
@@ -32,6 +33,7 @@
                 $interview_twitter = '<p class="twitter"><a href="'.$interview_twitter_url.'">@'.$interview_twitter_handle.'</a></p>';
               }
 
+              $interview_url = '';
               $interview_url = get_post_meta( get_the_ID(), 'interview_url', true );
               if (empty($interview_url)) {
                 $interview_url = $interview_twitter_url;
@@ -41,6 +43,7 @@
                 $interview_name = '<h3>'.$name.'</h3>';
               }
 
+              $image = '';
               if (has_post_thumbnail( $post->ID ) ) {
                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ) );
                 $image = $image[0];
