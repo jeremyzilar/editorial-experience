@@ -1,8 +1,9 @@
-<section id="head" class="">
+<section id="interviews" class="">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
         <div class="row">
+          <h2>Interviews</h2>
 
           <?php
             $counter = 0;

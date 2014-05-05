@@ -36,4 +36,5 @@
   <?php include(INC . 'navbar.php'); ?>
   <?php include 'head.php'; ?>
   <?php include 'interviews.php'; ?>
+  <?php include 'resources.php'; ?>
   <?php include 'authors.php'; ?>

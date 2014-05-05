@@ -11,6 +11,7 @@ include_once 'functions/related-link.php';
 include_once 'functions/art-direction.php';
 include_once 'functions/kicker.php';
 include_once 'functions/interviews.php';
+include_once 'functions/resources.php';
 
 
 // Variables
