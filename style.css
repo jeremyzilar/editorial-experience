@@ -37,6 +37,17 @@ section{
   text-align: center;
 }
 
+.btn-buy{
+  background:rgba(244, 0, 117, 0.65);
+  color:#fff;
+}
+
+.btn-learn{
+  background:#18B7E8;
+  color:#fff;
+}
+
+
 
 /*NAVIGATION*/
 .navbar{
@@ -63,6 +74,7 @@ section{
   color:#333;
   background:rgba(255, 255, 255, 0.5);
 }
+
 .navbar .navbar-nav li a.btn-buy{
   margin:4px 0 0 8px;
   padding:4px 10px;

@@ -19,7 +19,7 @@
             <p class="blurb">There's never been a more rewarding and challenging time to be designing reading experiences than the present.</p>
 
 
-            <p><a class="btn btn-sm btn-success" href="#" role="button">Learn more</a></p>
+            <p><a class="btn btn-sm btn-learn" href="#" role="button">Learn more</a> <a class="btn btn-sm btn-buy" href="#" role="button">Buy the Book</a></p>
           </div>
         </div>
       </div>
