@@ -28,7 +28,8 @@ function loop(){
 					?>
 					<div class="row">
 						<?php
-						 get_template_part('content', get_post_format() );
+							// echo get_post_format();
+							get_template_part('content', get_post_format() );
 						?>
 					</div> <!-- .row -->
 				</div> <!-- .container -->

@@ -44,10 +44,10 @@ add_theme_support( 'infinite-scroll', array(
 add_theme_support( 'post-thumbnails' );
 
 // Register a Menu
-function psfc_register_menu() {
+function edex_register_menu() {
   register_nav_menu('main-menu',__( 'Main Menu' ));
 }
-add_action( 'init', 'psfc_register_menu' );
+add_action( 'init', 'edex_register_menu' );
 
 
 
@@ -84,7 +84,7 @@ if (!is_admin()) {
 
 
 
-function psfc_get_link_url() {
+function edex_get_link_url() {
 	$has_url = get_the_post_format_url();
 	return ( $has_url ) ? $has_url : apply_filters( 'the_permalink', get_permalink() );
 }
@@ -102,16 +102,16 @@ function get_related(){
 }
 
 // Entry Meta
-if ( ! function_exists( 'psfc_entry_meta' ) ) :
-function psfc_entry_meta($id) {
+if ( ! function_exists( 'edex_entry_meta' ) ) :
+function edex_entry_meta($id) {
 	if (is_single()) {
 		$tweet = get_the_title() . ' by @jeremyzilar ' . get_permalink() . '?btn-twitter';
 		echo '<a data-msg="'. rawurlencode($tweet) .'" class="btn btn-xs btn-default btn-twitter" href="twitter://post?message='. rawurlencode($tweet) .'">Tweet</a> ';
 	}
 
-  psfc_entry_date();
+  edex_entry_date();
 
-	echo ' <a class="hidden" href="http://psfc.com" rel="author">Jeremy Zilar</a>';
+	echo ' <a class="hidden" href="http://edex.com" rel="author">Jeremy Zilar</a>';
 
 	if ( is_user_logged_in() ) {
 		$edit = get_edit_post_link($id);
@@ -129,7 +129,7 @@ function psfc_entry_meta($id) {
 endif;
 
 // CATEGORY
-function psfc_category(){
+function edex_category(){
   if (!is_category()) {
     foreach((get_the_category()) as $category) {
       if ($category->cat_name !== 'Uncategorized') {
@@ -140,8 +140,8 @@ function psfc_category(){
 }
 
 // DATE
-if ( ! function_exists( 'psfc_entry_date' ) ) :
-function psfc_entry_date( $echo = true ) {
+if ( ! function_exists( 'edex_entry_date' ) ) :
+function edex_entry_date( $echo = true ) {
   $date = '<a class="date" href="'.get_permalink().'" title="'.the_title_attribute( 'echo=0' ).'" rel="bookmark"><time class="dt-published published entry-date rel_time" datetime="'.get_the_date('c').'">'.get_the_time('g:i a').' (<span>'.get_the_time('F j, Y g:i a').'</span>)</time></a>';
   echo $date;
   return $date;

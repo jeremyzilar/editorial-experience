@@ -92,7 +92,7 @@ add_action('future_to_publish', 'wpforce_featured');
 
 
 
-function psfc_get_featured_image($size){
+function edex_get_featured_image($size){
 	global $post;
 	if ( has_post_thumbnail() ) {
 		$thumb = get_the_post_thumbnail( $post->ID, $size);

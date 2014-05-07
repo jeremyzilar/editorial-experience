@@ -1,6 +1,6 @@
 <div class="<?php echo GRID; ?>">
   <header class="entry-header">
-		<?php psfc_the_kicker(); ?>
+		<?php edex_the_kicker(); ?>
 
   	<?php if ( is_single() ) : ?>
   	<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -23,7 +23,7 @@
 	<?php endif; ?>
 
 	<footer class="entry-meta">
-    <?php psfc_entry_meta($post->ID); ?>
+    <?php edex_entry_meta($post->ID); ?>
 	</footer><!-- .entry-meta -->
 
 </div>

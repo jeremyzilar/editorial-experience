@@ -237,7 +237,7 @@ section{
   color:#555;
 }
 .entry-content a{
-  color:#18B7E8;
+  color:#1393b4;
 }
 .entry p{
   margin-bottom:16px;
@@ -263,7 +263,12 @@ section{
 .via{
   margin-top:15px;
 }
-.via a{
+.via img{
+  margin-top:-2px;
+}
+.via a,
+.via strong{
+  margin-top:2px;
   margin-left:5px;
   font-size:13px;
 }
@@ -319,7 +324,7 @@ section{
 .w376 .caption{
   margin-left:12px;
   position:absolute;
-  bottom:15px;
+  top:15px;
 }
 
 .w214{
@@ -334,7 +339,7 @@ section{
 .w214 .caption{
   margin-left:12px;
   position:absolute;
-  bottom:15px;
+  top:15px;
 }
 .w163{
   margin-top:5px;
