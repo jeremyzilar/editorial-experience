@@ -16,31 +16,29 @@
 
 // These are the additional image sizes that will be cut when adding an image to WP
 add_image_size('w50', 50, 50, true );         // 75 pixels wide x 75 pixels tall
-add_image_size('w75S', 75, 75, true );        // 75 pixels wide x 75 pixels tall
-add_image_size('w75', 75, 9999, false );      // 75 pixels wide (and unlimited height)
 add_image_size('w163', 163, 9999, false );    //163 pixels wide (and unlimited height)
 add_image_size('w214', 214, 9999, false );    //214 pixels wide (and unlimited height)
 add_image_size('w376', 376, 9999, false);     //376 pixels wide (and unlimited height)
 add_image_size('w600', 600, 9999, false);     //600 pixels wide (and unlimited height)
-add_image_size('w900', 900, 9999, false);     //700 pixels wide (and unlimited height)
 
 // These are the sizes that show up in the Admin
 $insite_imgsizes = array(
-  "w75S" => __("Thumb (75)"),
-  "w163" => __("Wide Thumb (w163)"),
-  "w214" => __("Small (w214)"),
-  "w376" => __("Medium (w376)"),
-  "w600" => __("Large (w600)"),
-  "w900" => __("Wide (w900)"),
+  // "w75" => __("Thumb (75)"),
+  "w163" => __("w50"),
+  "w163" => __("w163"),
+  "w214" => __("w214"),
+  "w376" => __("w376"),
+  // "w600" => __("Large (w600)"),
+  // "w900" => __("Wide (w900)"),
 );
 
 function custom_image_sizes($sizes) {
   global $insite_imgsizes;
-  unset( $sizes['thumbnail']);
-  unset( $sizes['medium']);
-  unset( $sizes['large']);
-  unset( $sizes['full'] ); // removes full size image
   $newimgsizes = array_merge($sizes, $insite_imgsizes);
+  // unset( $sizes['thumbnail']);
+  // unset( $sizes['medium']);
+  // unset( $sizes['large']);
+  // unset( $sizes['full'] ); // removes full size image
   return $newimgsizes;
 }
 add_filter('image_size_names_choose', 'custom_image_sizes');

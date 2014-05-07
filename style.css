@@ -67,14 +67,17 @@ section{
   color:#555;
   font-weight:600;
 }
+.navbar-default .navbar-nav>.active>a:hover,
 .navbar .navbar-nav li a:hover{
   color:#333;
   background:rgba(255, 255, 255, 0.35);
 }
-
+.navbar-default .navbar-nav>.active>a{
+  background:none;
+  color:#333;
+}
 
 .btn-buy{
-  margin-top:3px;
   margin-left:5px;
   background:rgba(247, 0, 131, 0.9);
   border-radius: 3px;
@@ -83,6 +86,9 @@ section{
 .btn-buy:hover{
   color:#fff;
   background:rgba(247, 0, 131, 0.9);
+}
+.navbar .navbar-nav li.btn-buy{
+  margin-top:3px;
 }
 .navbar .navbar-nav li.btn-buy a{
   background:rgba(244, 0, 117, 0.65);
@@ -225,11 +231,21 @@ section{
 .entry:first-child{
   margin-top:0;
 }
-.entry p{
+.entry-content *{
   font-size:16px;
   line-height:24px;
+  color:#555;
 }
-
+.entry-content a{
+  color:#18B7E8;
+}
+.entry p{
+  margin-bottom:16px;
+}
+.entry blockquote{
+  padding:10px 40px;
+  border:none
+}
 .entry .kicker{
   margin:0 0 10px 0;
   font-size:14px;
@@ -244,7 +260,9 @@ section{
   font-family: "nimbus-sans" sans-serif;
   font-weight:700;
 }
-
+.via{
+  margin-top:15px;
+}
 .via a{
   margin-left:5px;
   font-size:13px;
@@ -272,7 +290,8 @@ section{
 
 /*IMAGES*/
 .photo{
-  margin-bottom:25px;
+  margin-top:20px;
+  margin-bottom:30px;
 }
 .photo img{
   margin-bottom:2px;
@@ -284,8 +303,61 @@ section{
 }
 .photo .caption{
   color:#999;
-  font-size:13px
+  font-size:12px;
+  line-height:15px;
+  display:inline-block;
 }
+
+.w376{
+  float:left;
+  width:100%;
+  position:relative;
+}
+.w376 img{
+  float:left;
+}
+.w376 .caption{
+  margin-left:12px;
+  position:absolute;
+  bottom:15px;
+}
+
+.w214{
+  float:left;
+  width:100%;
+  position:relative;
+}
+.w214 img{
+  float:left;
+
+}
+.w214 .caption{
+  margin-left:12px;
+  position:absolute;
+  bottom:15px;
+}
+.w163{
+  margin-top:5px;
+  margin-left:16px;
+  float:right;
+  width:163px;
+}
+.thumbnail{
+  margin-top:0;
+  margin-right:15px;
+  margin-bottom:15px;
+  padding:0;
+  border:none;
+  width:75px;
+  float:left;
+}
+.thumbnail img{
+  margin:0;
+}
+.thumbnail .caption{
+  display:none;
+}
+
 .carousel-control{
   width:50%;
 }
