@@ -34,7 +34,13 @@
 
 <body <?php body_class(); ?>>
   <?php include(INC . 'navbar.php'); ?>
-  <?php if (is_front_page()) {
+  <?php
+  if (is_front_page()) {
     include 'head.php';
     include 'interviews.php';
-  } ?>
+  }
+  if (is_home() || is_single()) {
+    include 'head.php';
+  }
+
+   ?>
