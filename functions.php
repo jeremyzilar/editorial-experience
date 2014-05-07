@@ -104,11 +104,9 @@ function get_related(){
 // Entry Meta
 if ( ! function_exists( 'edex_entry_meta' ) ) :
 function edex_entry_meta($id) {
-	if (is_single()) {
-		$tweet = get_the_title() . ' by @jeremyzilar ' . get_permalink() . '?btn-twitter';
-		echo '<a data-msg="'. rawurlencode($tweet) .'" class="btn btn-xs btn-default btn-twitter" href="twitter://post?message='. rawurlencode($tweet) .'">Tweet</a> ';
-	}
 
+	$tweet = get_the_title() . ' by @' . get_the_author_meta('twitter') . ' ' . get_permalink() . '?btn-twitter';
+	echo '<a data-msg="'. rawurlencode($tweet) .'" class="btn btn-xs btn-default btn-twitter" href="twitter://post?message='. rawurlencode($tweet) .'">Tweet</a> ';
   edex_entry_date();
 
 	echo ' <a class="hidden" href="http://edex.com" rel="author">Jeremy Zilar</a>';
@@ -222,6 +220,21 @@ function get_art_label(){
 EOF;
 }
 
+
+// Add Fields to User Profiles
+function modify_contact_methods($profile_fields) {
+
+	// Add new fields
+	$profile_fields['twitter'] = 'Twitter Username';
+	$profile_fields['facebook'] = 'Facebook URL';
+	$profile_fields['gplus'] = 'Google+ URL';
+
+	// Remove old fields
+	unset($profile_fields['aim']);
+
+	return $profile_fields;
+}
+add_filter('user_contactmethods', 'modify_contact_methods');
 
 
 

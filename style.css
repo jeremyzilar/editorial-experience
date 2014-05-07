@@ -289,6 +289,26 @@ section{
   color:#b9b5b5;
   font-size:13px;
 }
+
+.entry-meta .btn-twitter{
+	margin-right:3px;
+	padding-left:22px;
+	padding-right:6px;
+	border-color:transparent;
+	position:relative;
+	color:#efefef;
+	top:-1px;
+	background:rgba(0, 136, 204, .8) url('img/twitter_logo_white_14.png') no-repeat 4px 3px;
+  -webkit-transition: all 0.15s ease-in-out;
+     -moz-transition: all 0.15s ease-in-out;
+       -o-transition: all 0.15s ease-in-out;
+          transition: all 0.15s ease-in-out;
+
+}
+.entry-meta .btn-twitter:hover{
+	background-color:rgba(0, 136, 204, 1);
+}
+
 .btn-edit{
   margin-left:5px;
 }
