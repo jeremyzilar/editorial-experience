@@ -2,17 +2,17 @@
 // This sets the 3 different DEFAULT WordPress sizes to the 3 sizes that best fit in the posts and pages
 
 // Add filters here
-update_option('thumbnail_size_w', 75);
-update_option('thumbnail_size_h', 75);
-update_option('thumbnail_crop', 1);
-
-update_option('medium_size_w', 214);
-update_option('medium_size_h', 9999);
-update_option('medium_crop', 0);
-
-update_option('large_size_w', 900);
-update_option('large_size_h', 9999);
-update_option('large_crop', 0);
+// update_option('thumbnail_size_w', 75);
+// update_option('thumbnail_size_h', 75);
+// update_option('thumbnail_crop', 1);
+//
+// update_option('medium_size_w', 600);
+// update_option('medium_size_h', 9999);
+// update_option('medium_crop', 0);
+//
+// update_option('large_size_w', 900);
+// update_option('large_size_h', 9999);
+// update_option('large_crop', 0);
 
 // These are the additional image sizes that will be cut when adding an image to WP
 add_image_size('w50', 50, 50, true );         // 75 pixels wide x 75 pixels tall
@@ -30,6 +30,7 @@ $insite_imgsizes = array(
   "w163" => __("Wide Thumb (w163)"),
   "w214" => __("Small (w214)"),
   "w376" => __("Medium (w376)"),
+  "w600" => __("Large (w600)"),
   "w900" => __("Wide (w900)"),
 );
 
