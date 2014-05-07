@@ -17,7 +17,7 @@
 		</div><!-- .entry-summary -->
 	<?php else : ?>
 		<div class="entry-content">
-			<?php the_content(); ?>
+			<?php echo the_content(); ?>
 			<?php echo get_related(); ?>
 		</div><!-- .entry-content -->
 	<?php endif; ?>

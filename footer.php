@@ -4,7 +4,7 @@
   <section id="footer">
     <div class="container">
       <div class="row">
-        <div class="<?php echo GRID; ?>">
+        <div class="col-lg-10">
           <?php $curYear = date('Y'); ?>
         	<p><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a> <span class="copyright">&#169;</span> copyright <?php echo $curYear; ?></p>
         </div>

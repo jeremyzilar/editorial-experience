@@ -23,7 +23,7 @@ a{
 }
 
 section{
-  padding:50px 0;
+  padding:40px 0;
 }
 
 .container{
@@ -31,6 +31,7 @@ section{
 }
 
 .heading{
+  margin-top:0;
   margin-bottom:75px;
   font-size:30px;
   font-weight:900;
@@ -51,7 +52,7 @@ section{
 
 /*NAVIGATION*/
 .navbar{
-  margin-bottom:5px;
+  margin-bottom:0;
   font-family: "nimbus-sans" sans-serif;
   min-height:36px;
   border:none;
@@ -61,7 +62,6 @@ section{
   font-size:15px;
   font-weight:800;
   height:36px;
-  color:#333;
 }
 .navbar-brand,
 .navbar .navbar-nav li a{
@@ -72,7 +72,7 @@ section{
 }
 .navbar .navbar-nav li a:hover{
   color:#333;
-  background:rgba(255, 255, 255, 0.5);
+  background:rgba(255, 255, 255, 0.35);
 }
 
 .navbar .navbar-nav li a.btn-buy{
@@ -89,13 +89,15 @@ section{
 }
 /*HEAD*/
 
-#head{
-  padding:50px 0;
-}
+#head{}
 
 #head h1{
   font-size:40px;
   font-weight:900;
+}
+#head h1 a{
+  text-decoration:none;
+  color:#333;
 }
 #head .lead{
   font-size:28px;
@@ -262,13 +264,23 @@ section{
   color:#999;
   font-size:13px
 }
-
+.carousel-control{
+  width:50%;
+}
+.carousel-control span{
+  display:none !important;
+}
+.carousel-control.right,
+.carousel-control.left{
+  background:none;
+}
 
 /*Footer*/
 #footer{
-  padding: 40px;
-  background:#efefef;
+  padding: 20px 0;
+  background:#fac946;
 }
 #footer p{
+  margin:0;
   font-size:13px;
 }
