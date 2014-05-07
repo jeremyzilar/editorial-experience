@@ -34,5 +34,7 @@
 
 <body <?php body_class(); ?>>
   <?php include(INC . 'navbar.php'); ?>
-  <?php include 'head.php'; ?>
-  <?php include 'interviews.php'; ?>
+  <?php if (is_front_page()) {
+    include 'head.php';
+    include 'interviews.php';
+  } ?>

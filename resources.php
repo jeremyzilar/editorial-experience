@@ -1,3 +1,10 @@
+<?php
+/*
+Template Name: Resources
+*/
+
+get_header(); ?>
+
 <section id="resources" class="">
   <div class="container">
     <div class="row">
@@ -64,3 +71,4 @@ EOF;
     </div>
   </div>
 </section>
+<?php get_footer(); ?>

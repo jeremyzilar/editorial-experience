@@ -110,7 +110,7 @@ function resource( $post )
   	<p>
   		<label for="resource_bio">Description</label><br />
       <textarea name="resource_desc" id="resource_desc"><?php echo $desc; ?></textarea>
-  		<small>e.g. Chief Creative Officer, The New York Times</small>
+  		<small>e.g. This short polemic makes the case for accessible design across platforms.</small>
   	</p>
 
     <p>

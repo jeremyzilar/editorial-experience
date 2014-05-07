@@ -1,5 +1,6 @@
-<?php include 'resources.php'; ?>
-<?php include 'authors.php'; ?>
+<?php if (is_front_page()) {
+  include 'authors.php';
+} ?>
 
   <section id="footer">
     <div class="container">
