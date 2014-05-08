@@ -143,7 +143,15 @@ section{
   font-weight:900;
 }
 .blog-head h3{
+  margin-top:5px;
+  padding-top:10px;
+/*  border-top:2px #333 solid;*/
   font-weight:700;
+}
+.blog-head .divider{
+  margin-top:50px;
+  border-top:2px #333 solid;
+  width:100px;
 }
 
 
@@ -440,6 +448,20 @@ section{
   display:inline-block;
   border-top:2px #333 solid;
 }
+
+.widget_recent_entries ul{
+  padding:0 0 0 10px;
+}
+.widget_recent_entries li{
+  font-weight:600;
+  font-size:16px;
+}
+.widget_recent_entries li span{
+  color:#888;
+  font-size:12px;
+  font-weight:400;
+}
+
 
 .book-promo{}
 .book-promo img{

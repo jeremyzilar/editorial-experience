@@ -7,6 +7,7 @@
 			<div class="blog-head">
 				<h1>Designing the Editorial Experience</h1>
 				<h3>Observations and News from the wild</h3>
+				<div class="divider"></div>
 			</div>
 			<?php loop(); ?>
 		</div>
