@@ -46,7 +46,7 @@
     realTime('.entry .rel_time span');
 
 
-		
+
 
     // Twitter Button - - - - - - - - - - - - - - - - - - - - -
     $('.btn-twitter').click(function(e) {
@@ -63,6 +63,23 @@
 
 
 
+    // Scroll To Anchor and Offset logic - - - - - - - - - - - - - - - - - - - - -
+    if (window.location.hash){ // Check if there's an anchor in the url
+      var id = window.location.hash.substring(1);
+    }
+    $(window).load(function() {
+      if (window.location.hash){
+        fromTop = 0;
+        $('html, body').animate({scrollTop: $('#'+id).offset().top - fromTop}, 800);
+      }
+    });
+
+    $(".btn-learn").live("click", function(e) {
+      e.preventDefault();
+      var source = $(this).attr('data-id');
+      $('html, body').animate({scrollTop: $(source).offset().top}, 800);
+    });
+
 
 		// $twt = $('.btn-twitter').hide();
 		// if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
@@ -72,10 +89,10 @@
 
     // Infinite Scroll — brought to you by Jet Pack plugin.
     // Adding classes to existing markup to help style the 'load more' button
-    // var $infinite_handle = $('#infinite-handle');
-    // var $infinite_handle_label = $infinite_handle.find('span');
-    // $infinite_handle.addClass('container').wrapInner('<div class="row" />');
-    // $infinite_handle_label.wrap('<div class="doc col-lg-7 col-md-8 col-sm-9 col-md-offset-2 col-sm-offset-3" />').addClass('btn').text('show more');
+    var $infinite_handle = $('#infinite-handle');
+    var $infinite_handle_label = $infinite_handle.find('span');
+    $infinite_handle.addClass('container').wrapInner('<div class="row" />');
+    $infinite_handle_label.wrap('<div class="col-lg-6 col-md-8 col-sm-9 col-lg-offset-3 col-md-offset-2 col-sm-offset-2" />').addClass('btn btn-more').text('show more');
 
   });
 

@@ -40,7 +40,7 @@
     include 'interviews.php';
   }
   if (is_home() || is_single()) {
-    include 'head.php';
+    // include 'head.php';
   }
 
    ?>

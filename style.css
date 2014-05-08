@@ -325,6 +325,16 @@ section{
 .btn-edit{
   margin-left:5px;
 }
+#infinite-handle{
+  margin-bottom:80px;
+}
+#infinite-handle .btn-more{
+  margin:0 auto;
+  background:#666;
+  border-radius:3px;
+  display:block;
+  width:100px;
+}
 
 /*IMAGES*/
 .photo{
