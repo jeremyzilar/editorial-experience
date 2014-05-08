@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-  <title><?php wp_title( '|', true, 'right' ); ?></title>
+  <title><?php wp_title( '| Designing the Editorial Experience', true, 'right' ); ?></title>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
 
 	<meta name="keywords" content="Content Strategy, Design, Blogging, The New York Times, Jeremy Zilar" />

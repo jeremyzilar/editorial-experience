@@ -41,6 +41,11 @@ section{
 
 
 .btn-learn{
+  background:rgba(24, 191, 233, 0.85);
+  color:#fff;
+  font-weight:700;
+}
+.btn-learn:hover{
   background:#18B7E8;
   color:#fff;
 }
@@ -54,6 +59,7 @@ section{
   min-height:36px;
   border:none;
   background:#fac946;
+  border-radius:0;
 }
 .navbar .navbar-brand{
   font-size:15px;
@@ -101,21 +107,13 @@ section{
   border-radius:0;
   border:none;
 }
-/*.navbar .navbar-nav .btn-buy {
-  margin:4px 0 0 8px;
-  padding:4px 10px;
-  background:rgba(244, 0, 117, 0.65);
-  font-size:14px;
-  font-weight:600;
-  border:none;
-  color:#fff;
-  background:rgba(244, 0, 117, 0.65);
-}*/
+
 /*HEAD*/
 
 #head{}
 
 #head h1{
+  margin-top:3px;
   font-size:40px;
   font-weight:900;
 }
@@ -125,6 +123,7 @@ section{
 }
 #head .lead{
   font-size:28px;
+  line-height:28px;
   font-weight:600;
 }
 
@@ -252,6 +251,9 @@ section{
 .entry{
   margin:40px 0;
   padding:40px 0;
+}
+.entry h1{
+  font-size:24px;
 }
 .entry:first-child{
   margin-top:0;
