@@ -1,7 +1,7 @@
 <section id="authors" class="">
   <div class="container">
     <div class="row">
-<!--       <h2 class="heading">Authors</h2> -->
+      <h2 class="heading">Authors</h2>
       <div class="col-lg-10 col-sm-12 col-lg-offset-1">
         <div class="row">
 

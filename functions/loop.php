@@ -16,7 +16,7 @@ function loop(){
 					<?php
 						if (is_page()) { ?>
 							<div class="row">
-								<div class="col-lg-11 col-md-12 col-sm-12 col-md-offset-0 col-sm-offset-0">
+								<div class="col-lg-10 col-sm-12 col-sm-offset-0 col-lg-offset-1">
 									<?php
 										if (shortcode_exists( 'gallery' )) {
 											echo do_shortcode('[gallery]');
