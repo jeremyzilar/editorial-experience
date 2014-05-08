@@ -180,22 +180,31 @@ section{
 /*  background:rgba(255, 61, 27, 0.40);*/
 }
 .resource-group{
-  margin-top:50px;
+  margin-top:20px;
 }
 #resources h4{
-  padding:0 15px;
-  text-transform:uppercase;
-  font-weight:400;
+  margin-bottom:30px;
+  padding:5px 0 0 0;
+  display:inline-block;
+/*  text-transform:uppercase;*/
+  font-weight:800;
+  border-top:2px #333 solid;
 }
 .resource{
-  margin-bottom:15px;
+  margin-bottom:25px;
 }
 .resource h5{
+  margin-top:0;
   margin-bottom:8px;
   font-weight:700;
   font-size:16px;
 }
+.resource h5 img{
+  margin-top:-3px;
+  margin-right:5px;
+}
 .resource .desc{
+  margin-bottom:5px;
   color:#666;
 }
 .resource .url a{

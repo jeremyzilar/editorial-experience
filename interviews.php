@@ -1,7 +1,7 @@
 <section id="interviews" class="">
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-lg-offset-1">
+      <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
         <h2 class="heading">Interviews</h2>
         <div class="row">
           <?php
@@ -54,7 +54,7 @@
 
 
               echo <<<EOF
-              <div class="interview col-lg-4">
+              <div class="interview col-sm-4">
                 <img src="$image" class="img-responsive" alt="" />
                 $interview_name
                 $interview_bio

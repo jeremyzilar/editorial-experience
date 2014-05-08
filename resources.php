@@ -7,10 +7,7 @@ get_header(); ?>
 
 <section id="resources" class="">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h2 class="heading">Resources</h2>
-        <div class="row resource-group">
+      <h2 class="heading">Resources</h2>
           <?php
             $taxonomy_objects = get_object_taxonomies( 'resource', 'objects' );
 
@@ -29,7 +26,16 @@ get_header(); ?>
               		)
               	)
               );
-              echo'<h4>'.$term->name.'</h4>';
+              echo <<<EOF
+              <div class="row">
+              <div class="col-sm-3 col-md-2 col-md-offset-1">
+                <h4>$term->name</h4>
+              </div>
+              <div class="col-sm-9 col-lg-8">
+
+                <div class="row resource-group">
+EOF;
+              // echo'<h4>'.$term->name.'</h4>';
               $loop = new WP_Query( $args );
               while ( $loop->have_posts() ) : $loop->the_post();
               // print_r($loop);
@@ -44,12 +50,12 @@ get_header(); ?>
                 $resource_url = '';
                 $resource_url = get_post_meta( get_the_ID(), 'resource_url', true );
                 $resource_url_short = substr($resource_url,0,50).'...';
-                $resource_html = '<p class="url"><a href="'.$resource_url.'"><img src="http://www.google.com/s2/favicons?domain='.$resource_url.'"/><span>'. $resource_url_short .'</span></a></p>';
+                $resource_html = '<p class="url">&#8594; <a href="'.$resource_url.'"><span>'. $resource_url_short .'</span></a></p>';
 
-                $resource_name = '<h5><a href="'.$resource_url.'" title="'.$name.'">'.$name.'</a></h5>';
+                $resource_name = '<h5><img src="http://www.google.com/s2/favicons?domain='.$resource_url.'"/><a href="'.$resource_url.'" title="'.$name.'">'.$name.'</a></h5>';
 
                 echo <<<EOF
-                <div class="resource col-lg-6">
+                <div class="resource col-sm-6">
                   $resource_name
                   $resource_desc
                   $resource_html
@@ -64,6 +70,9 @@ EOF;
                   echo '<div class="row">';
                 }
               endwhile;
+            echo '</div>';
+            echo '</div>';
+            echo '</div>';
             }
           ?>
         </div>

@@ -2,17 +2,17 @@
   <div class="container">
     <div class="row">
 <!--       <h2 class="heading">Authors</h2> -->
-      <div class="col-lg-10 col-lg-offset-1">
+      <div class="col-lg-10 col-sm-12 col-lg-offset-1">
         <div class="row">
 
-          <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-sm-8 col-sm-offset-2">
             <div class="photo">
               <img src="<?php echo TDIR; ?>/img/book/authors.jpg" class="img-responsive" alt="Juliette Cezzar and Sue A" /><span class="credit">Photo by Dan Musick</span>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-sm-6">
             <div class="author-bio">
               <h4>Juliette Cezzar <span>— <a href="https://twitter.com/oubliette">@oubliette</a></span></h4>
               <p>Juliette is the director of the BFA Communication Design and BFA Design & Technology programs at Parsons the New School for Design in New York City.</p>
@@ -21,7 +21,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-sm-6">
             <div class="author-bio">
               <h4>Sue Apfelbaum <span>— <a href="https://twitter.com/sueapfe">@sueapfe</a></span></h4>
               <p>Sue is an independent Brooklyn-based writer, editor, and content strategist whose primary interests center on design, art, music, and film.</p>
