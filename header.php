@@ -14,10 +14,9 @@
   <!-- Typekit -->
   <!-- Registered with jc [at] juliettecezzar.com -->
 	<script type="text/javascript" src="//use.typekit.net/pzy6bux.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-
-	<link rel="me" href="https://twitter.com/jeremyzilar" />
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/book/favicon.ico" />
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
@@ -34,13 +33,3 @@
 
 <body <?php body_class(); ?>>
   <?php include(INC . 'navbar.php'); ?>
-  <?php
-  if (is_front_page()) {
-    include 'head.php';
-    include 'interviews.php';
-  }
-  if (is_home() || is_single()) {
-    // include 'head.php';
-  }
-
-   ?>

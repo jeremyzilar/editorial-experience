@@ -173,6 +173,37 @@ EOF;
 }
 
 
+// Custom Page Gallery
+function edex_page_gallery(){
+	echo <<<EOF
+	<div class="row">
+		<div class="col-lg-10 col-sm-12 col-sm-offset-0 col-lg-offset-1">
+EOF;
+
+		if (shortcode_exists( 'gallery' )) {
+			// echo do_shortcode('[gallery]');
+			if ( gallery_shortcode($post->ID) ){
+				$pattern = get_shortcode_regex();
+				$matches = array();
+				preg_match("/$pattern/s", get_the_content(), $matches); //just finds the first one
+				echo do_shortcode($matches[0]);
+			}
+			// echo do_shortcode('[gallery link="none" ids="69,71,70,72,73,75,74,76,77,79,78,80,81,83,82"]');
+		}
+
+		echo <<<EOF
+		</div>
+	</div>
+EOF;
+}
+
+
+function remove_shortcode_from($content) {
+  $content = strip_shortcodes( $content );
+  return $content;
+}
+
+
 
 // Background Image
 function get_bgimg(){

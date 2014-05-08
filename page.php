@@ -1,7 +1,12 @@
 <?php get_header(); ?>
 
-<div id="blog">
-	<?php loop(); ?>
+<div id="page">
+	<div class="row">
+		<div class="<?php echo GRID; ?>">
+			<?php loop(); ?>
+		</div>
+		<?php get_sidebar(); ?>
+	</div>
 </div>
 
 <?php get_footer(); ?>
