@@ -26,7 +26,7 @@ $inc = $root . '/inc/';
 define('INC', $inc);
 
 // The Common Grid — used in multiple places
-$grid = 'entry-box col-lg-6 col-md-8 col-sm-9 col-lg-offset-3 col-md-offset-2 col-sm-offset-2';
+$grid = 'entry-box col-lg-6 col-md-6 col-sm-6 col-lg-offset-1 col-md-offset-1 col-sm-offset-1';
 define('GRID', $grid);
 
 // Hide WP Admin Bar
@@ -78,7 +78,18 @@ if (!is_admin()) {
 
 
 
-
+function edex_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Blog Widgets', 'edex' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Appears on the blog.', 'edex' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+}
+add_action( 'widgets_init', 'edex_widgets_init' );
 
 
 

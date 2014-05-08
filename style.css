@@ -98,6 +98,8 @@ section{
 }
 .navbar .navbar-nav li.btn-buy a:hover{
   background:rgba(247, 0, 131, 0.9);
+  border-radius:0;
+  border:none;
 }
 /*.navbar .navbar-nav .btn-buy {
   margin:4px 0 0 8px;
@@ -135,16 +137,13 @@ section{
   width:100%;
 }
 
-.jumbotron{
-  margin-top:0px;
+.blog-head{}
+.blog-head h1{
+  font-size:33px;
+  font-weight:900;
 }
-.jumbotron h1{
-  font-size:51px;
-  font-weight:800;
-  color:#0e2d0c;
-}
-.jumbotron h1 a{
-  color:#12370e;
+.blog-head h3{
+  font-weight:700;
 }
 
 
@@ -236,7 +235,9 @@ section{
 }
 
 /*ENTRY*/
-
+.entry-box{
+  margin-top:30px;
+}
 .entry{
   margin:40px 0;
   padding:40px 0;
@@ -245,8 +246,8 @@ section{
   margin-top:0;
 }
 .entry-content *{
-  font-size:16px;
-  line-height:24px;
+  font-size:18px;
+  line-height:25px;
   color:#333;
 }
 .entry-content a{
@@ -283,7 +284,7 @@ section{
 .via strong{
   margin-top:2px;
   margin-left:5px;
-  font-size:13px;
+  font-size:14px;
 }
 .via img{}
 
@@ -414,6 +415,37 @@ section{
 .carousel-control.right,
 .carousel-control.left{
   background:none;
+}
+
+
+/*Sidebar*/
+#sidebar{
+  margin-top:80px;
+}
+#sidebar .widget{
+  margin-bottom:60px;
+}
+#sidebar .entry{
+  margin:0;
+  padding:0;
+}
+#sidebar .entry a{
+  color:#1393b4;
+}
+#sidebar .widget h4{
+  margin-top:0;
+  margin-bottom:14px;
+  padding-top:8px;
+  font-weight:800;
+  display:inline-block;
+  border-top:2px #333 solid;
+}
+
+.book-promo{}
+.book-promo img{
+  padding-left:10px;
+  width:120px;
+  float:right;
 }
 
 /*Footer*/

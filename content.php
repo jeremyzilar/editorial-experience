@@ -1,4 +1,4 @@
-<div class="<?php echo GRID; ?>">
+<article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
   <header class="entry-header">
 		<?php edex_the_kicker(); ?>
 
@@ -26,4 +26,4 @@
     <?php edex_entry_meta($post->ID); ?>
 	</footer><!-- .entry-meta -->
 
-</div>
+</article>

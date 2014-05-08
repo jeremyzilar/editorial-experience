@@ -9,33 +9,20 @@ function loop(){
 
 	if (have_posts()) {
 		while (have_posts()) {
-			the_post(); ?>
-
-			<article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
-				<div class="container">
-					<?php
-						if (is_page()) { ?>
-							<div class="row">
-								<div class="col-lg-10 col-sm-12 col-sm-offset-0 col-lg-offset-1">
-									<?php
-										if (shortcode_exists( 'gallery' )) {
-											echo do_shortcode('[gallery]');
-										}
-									?>
-								</div>
-							</div>
-						<?php }
-					?>
-					<div class="row">
+			the_post();
+			if (is_page()) { ?>
+				<div class="row">
+					<div class="col-lg-10 col-sm-12 col-sm-offset-0 col-lg-offset-1">
 						<?php
-							// echo get_post_format();
-							get_template_part('content', get_post_format() );
+							if (shortcode_exists( 'gallery' )) {
+								echo do_shortcode('[gallery]');
+							}
 						?>
-					</div> <!-- .row -->
-				</div> <!-- .container -->
-			</article> <!-- #post -->
-		<?php
-		$i++;
+					</div>
+				</div>
+			<?php }
+			get_template_part('content', get_post_format() );
+			$i++;
 		}
 		// include TDIR . '/nextprev.php';
 	} else {
