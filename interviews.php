@@ -38,8 +38,11 @@
               if (empty($interview_url)) {
                 $interview_url = $interview_twitter_url;
               }
-              $interview_name = '<h3><a href="'.$interview_url.'" title="'.$name.'">'.$name.'</a></h3>';
-              if (empty($interview_twitter) || empty($interview_url)) {
+              $interview_name = '<h3><a href="'.$interview_twitter_url.'" title="'.$name.'">'.$name.'</a></h3>';
+              if (empty($interview_twitter_url)) {
+                $interview_name = '<h3><a href="'.$interview_url.'" title="'.$name.'">'.$name.'</a></h3>';
+              }
+              if (empty($interview_url) && empty($interview_twitter_url)) {
                 $interview_name = '<h3>'.$name.'</h3>';
               }
 
