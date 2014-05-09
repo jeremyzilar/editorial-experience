@@ -175,14 +175,12 @@ section{
 .interview{
   margin-bottom:30px;
   min-height:65px;
-  text-align: center;
 }
 .interview img{
-/*  margin-right:18px;*/
-  margin:0 auto;
-  width:50px;
-/*  float:left;*/
-  border-radius:50px;
+  margin-right:18px;
+  width:65px;
+  float:left;
+  border-radius:75px;
 }
 .interview h3{
   margin-top:0;
@@ -192,9 +190,6 @@ section{
 }
 .interview p{
   margin-bottom:0;
-}
-.interview .twitter a{
-  color:#1393b4;
 }
 
 
@@ -543,7 +538,7 @@ SM
     min-height:65px;
   }
   .interview img{
-    width:50px;
+    width:65px;
   }
   .heading{
     margin-bottom:70px;
