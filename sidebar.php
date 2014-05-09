@@ -1,5 +1,5 @@
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-	<div id="sidebar" class="col-sm-3 col-sm-offset-1" role="complementary">
+	<div id="sidebar" class="col-lg-3 col-sm-4 col-sm-offset-1" role="complementary">
 		<div class="sidebar-inner">
 			<div class="widget-area">
         <div class="widget">

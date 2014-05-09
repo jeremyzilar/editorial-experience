@@ -173,7 +173,8 @@ section{
   background:rgba(208, 225, 255, 0.85);
 }
 .interview{
-  margin-bottom:50px;
+  margin-bottom:30px;
+  min-height:65px;
 }
 .interview img{
   margin-right:18px;
@@ -499,4 +500,66 @@ section{
 #footer p{
   margin:0;
   font-size:13px;
+}
+
+
+
+
+/*
+Hide code snippets on mobile devices
+XS
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+*/
+@media screen and (max-width: 767px) {
+  .navbar .navbar-brand{
+    margin-top:5px;
+  }
+  .interview{
+    margin-bottom:25px;
+    min-height:55px;
+  }
+  .interview img{
+    width:55px;
+  }
+  .heading{
+    margin-bottom:40px;
+    font-size:21px;
+  }
+
+}
+
+/*
+Tablets and up
+SM
+*/
+@media screen and (min-width: 768px) {
+  .interview{
+    margin-bottom:30px;
+    min-height:65px;
+  }
+  .interview img{
+    width:65px;
+  }
+  .heading{
+    margin-bottom:70px;
+    font-size:24px;
+  }
+}
+
+/*
+Tablets/desktops and up
+MD
+*/
+@media screen and (min-width: 992px) {
+
+}
+
+
+
+/*
+Large desktops and up
+LG
+*/
+@media screen and (min-width: 1200px) {
+
 }
