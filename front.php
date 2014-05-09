@@ -8,10 +8,10 @@ include 'interviews.php';
 
 if (have_posts()) {
   while (have_posts()) {
-    the_post();
-    edex_page_gallery(); ?>
+    the_post();?>
     <section id="about">
       <div class="container">
+        <?php edex_page_gallery();  ?>
         <div class='row'>
           <div class="col-sm-6 col-sm-offset-3">
             <article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
