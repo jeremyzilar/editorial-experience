@@ -6,7 +6,7 @@
           <h4 class="widget-title">The Book</h4>
           <div class="entry book-promo">
             <a href="http://www.amazon.com/dp/1592538959/?tag=themapstrsch-20"><img src="<?php echo TDIR; ?>/img/book/edex-cover.gif" class="img-responsive" alt="" /></a>
-            <p>Conversations, case studies, and essential principles of editorial design across media, compiled by Sue Apfelbaum and Juliette Cezzar.</p>
+            <p>Conversations, case studies, and essential principles of editorial design across media, authored by Sue Apfelbaum and Juliette Cezzar.</p>
           </div>
 		    </div>
 

@@ -50,7 +50,20 @@ section{
   color:#fff;
 }
 
+.entry-content .btn-blog{
+  margin:25px auto;
+  display:block;
+  width:150px;
+  color:#fff;
+  font-size:16px;
+  font-weight:600;
+  background:rgba(247, 0, 131, 0.8);
+  border:none;
+}
 
+.entry-content .btn-blog:hover{
+  background:rgb(250, 0, 137);
+}
 
 /*NAVIGATION*/
 .navbar{
@@ -85,13 +98,14 @@ section{
 
 .btn-buy{
   margin-left:5px;
-  background:rgba(247, 0, 131, 0.9);
+  background:rgba(247, 0, 131, 0.8);
   border-radius: 3px;
   color:#fff;
+  font-weight:600;
 }
 .btn-buy:hover{
   color:#fff;
-  background:rgba(247, 0, 131, 0.9);
+  background:rgb(250, 0, 137);
 }
 .navbar .navbar-nav li.btn-buy{
   margin-top:3px;
@@ -163,7 +177,7 @@ section{
 }
 .interview img{
   margin-right:18px;
-  width:75px;
+  width:65px;
   float:left;
   border-radius:75px;
 }

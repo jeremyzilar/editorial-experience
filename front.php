@@ -26,6 +26,7 @@ if (have_posts()) {
               the_content();
               remove_filter('the_content', 'remove_shortcode_from')
             ?>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/" title="Read the Blog" class="btn btn-md btn-blog btn-primary">Read the Blog</a>
           </div><!-- .entry-content -->
 
         </article>
