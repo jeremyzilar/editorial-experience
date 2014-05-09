@@ -156,10 +156,7 @@ section{
 
 /*Authors*/
 #interviews{
-  background:#e4eaea;
-  background:#E0EBFF;
-  background:#C2D6FF;
-  background:#CEDEFF;
+  background:rgba(208, 225, 255, 0.85);
 }
 .interview{
   margin-bottom:50px;
