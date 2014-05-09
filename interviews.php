@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
-        <h2 class="heading">Conversations and Case Studies</h2>
+        <h2 class="heading">Interviews and Case Studies with</h2>
         <div class="row">
           <?php
             $counter = 0;
