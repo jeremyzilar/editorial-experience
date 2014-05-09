@@ -61,7 +61,7 @@ function image_wrapper( $html, $id, $caption, $title, $align, $url, $size, $alt 
 	$img = get_image_tag($id, $alt, $title, $align, $size);
 	$i = preg_replace( '/(width|height)="\d*"\s/', "", $img ); // Removes height & width
 	if (!empty($caption)) {
-		$caption = '<span class="caption">'.$caption.'</span>';
+		$caption = '<span class="caption hello">'.$caption.'</span>';
 	}
   $code = '<div class="photo ' . $size . '">'. $i . $caption . '</div>';
   return $code;

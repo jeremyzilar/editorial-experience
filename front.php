@@ -4,7 +4,6 @@ Template Name: Homepage
 */
 get_header();
 include 'head.php';
-include 'interviews.php';
 
 if (have_posts()) {
   while (have_posts()) {
@@ -41,6 +40,8 @@ if (have_posts()) {
 } else {
   get_template_part( 'content', 'none' );
 }
+
+include 'interviews.php';
 
 get_footer();
 
