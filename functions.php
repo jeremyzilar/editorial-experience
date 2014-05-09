@@ -68,7 +68,7 @@ if (!is_admin()) {
 		function add_my_post_status_to_query( $query ) {
 			if ( is_home() && $query->is_main_query() || is_feed())
 				$query->set(
-					'post_status', array('publish', 'pending', 'draft', 'future', 'private', 'inherit', 'trash')
+					'post_status', array('publish', 'pending', 'draft', 'future', 'private', 'inherit')
 				);
 			return $query;
 		}
