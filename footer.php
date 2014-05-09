@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-lg-10">
           <?php $curYear = date('Y'); ?>
-        	<p><a href="<?php bloginfo( 'url' ); ?>"><strong><?php bloginfo( 'name' ); ?></strong></a> <span class="copyright">&#169;</span> <?php echo $curYear; ?> Sue Apfelbaum and Juliette Cezzar <br/> <a>Site by <a href="http://jeremyzilar.com">Jeremy Zilar</a></p>
+        	<p><a href="<?php bloginfo( 'url' ); ?>"><strong><?php bloginfo( 'name' ); ?></strong></a> <span class="copyright">&#169;</span> <?php echo $curYear; ?> Sue Apfelbaum and Juliette Cezzar <br/> <a>Site by <a href="http://jeremyzilar.com/?=edex">Jeremy Zilar</a></p>
 
 
         </div>
