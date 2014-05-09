@@ -92,7 +92,7 @@
     var $infinite_handle = $('#infinite-handle');
     var $infinite_handle_label = $infinite_handle.find('span');
     $infinite_handle.addClass('container').wrapInner('<div class="row" />');
-    $infinite_handle_label.wrap('<div class="col-lg-6 col-md-8 col-sm-9 col-lg-offset-3 col-md-offset-2 col-sm-offset-2" />').addClass('btn btn-more').text('show more');
+    $infinite_handle_label.wrap('<div class="col-sm-6 col-sm-offset-1" />').addClass('btn btn-more').text('show more');
 
   });
 

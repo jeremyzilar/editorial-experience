@@ -1,14 +1,9 @@
 <?php
 
-ini_set( 'upload_max_size' , '64M' );
-ini_set( 'post_max_size', '64M');
-ini_set( 'max_execution_time', '300' );
-
 include_once 'functions/wp_enqueue_script.php';
 include_once 'functions/loop.php';
 include_once 'functions/images.php';
 include_once 'functions/related-link.php';
-include_once 'functions/art-direction.php';
 include_once 'functions/kicker.php';
 include_once 'functions/interviews.php';
 include_once 'functions/resources.php';
@@ -26,7 +21,7 @@ $inc = $root . '/inc/';
 define('INC', $inc);
 
 // The Common Grid — used in multiple places
-$grid = 'entry-box col-lg-6 col-md-6 col-sm-6 col-lg-offset-1 col-md-offset-1 col-sm-offset-1';
+$grid = 'col-lg-6 col-md-6 col-sm-6 col-lg-offset-1 col-md-offset-1 col-sm-offset-1';
 define('GRID', $grid);
 
 // Hide WP Admin Bar
@@ -37,7 +32,7 @@ add_filter('show_admin_bar', '__return_false');
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image',  'video', 'audio', 'chat', 'status', 'quote', 'link') );
 add_theme_support( 'infinite-scroll', array(
 	'type'			 		 => 'click',
-	'container' 		 => 'blog',
+	'container' 		 => 'entry-box',
 	'render'  		 	 => 'loop',
 	'footer' => 'page'
 ) );

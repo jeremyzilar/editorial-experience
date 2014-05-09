@@ -3,7 +3,7 @@
 <div id="blog">
 	<div class="row">
 
-		<div class="<?php echo GRID; ?>">
+		<div id="entry-box" class="<?php echo GRID; ?>">
 			<div class="blog-head">
 				<h1>Designing the Editorial Experience</h1>
 				<h3>News &amp; Insights on Editorial Design Across Media</h3>

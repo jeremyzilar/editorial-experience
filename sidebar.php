@@ -13,7 +13,7 @@
         <div class="widget">
           <h4 class="widget-title">The Authors</h4>
           <div class="entry book-promo">
-            <p><strong>Sue Apfelbaum / <a href="https://twitter.com/sueapfe">@sueapfe</a></strong> — Writer, editor, listener, eater, observer.  </p>
+            <p><strong>Sue Apfelbaum / <a href="https://twitter.com/sueapfe">@sueapfe</a></strong> — Writer, editor, content strategist, and consultant.</p>
             <p><strong>Juliette Cezzar / <a href="https://twitter.com/oubliette">@oubliette</a></strong> — Designer,  educator, author and Director of the Communication Design Program at Parsons the New School for Design in New York City.</p>
           </div>
         </div>
