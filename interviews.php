@@ -57,15 +57,17 @@
 
 
               echo <<<EOF
-              <div class="interview col-sm-4">
+              <div class="interview col-sm-3">
                 <img src="$image" class="img-responsive" alt="" />
-                $interview_name
-                $interview_bio
-                $interview_twitter
+                <div class="txt">
+                  $interview_name
+                  $interview_bio
+                  $interview_twitter
+                </div>
               </div>
 EOF;
 
-              if(++$counter % 3 === 0){
+              if(++$counter % 4 === 0){
                 echo '</div>';
                 echo '<div class="row">';
               }

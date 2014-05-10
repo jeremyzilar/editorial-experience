@@ -10,7 +10,7 @@
             <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
             <p class="lead"><?php bloginfo( 'description' ); ?></p>
             <p class="blurb"><?php echo get_option("edex_book_copy"); ?></p>
-            <p><a class="btn btn-sm btn-learn" data-id="#about" href="<?php echo esc_url( home_url( '/' ) ); ?>" role="button">Learn More</a> <a class="btn btn-sm btn-buy" href="http://www.amazon.com/dp/1592538959/?tag=themapstrsch-20" role="button">Buy the Book</a></p>
+            <p><a class="btn btn-sm btn-buy" href="http://www.amazon.com/dp/1592538959/?tag=themapstrsch-20" role="button">Buy the Book</a></p>
           </div>
         </div>
       </div>
