@@ -105,7 +105,7 @@ section{
 }
 
 .btn-buy{
-  margin-left:5px;
+  margin-left:0;
   background:rgba(247, 0, 131, 0.8);
   border-radius: 3px;
   color:#fff;
@@ -116,6 +116,7 @@ section{
   background:rgb(250, 0, 137);
 }
 .navbar .navbar-nav li.btn-buy{
+  margin-left:5px;
   margin-top:3px;
 }
 .navbar .navbar-nav li.btn-buy a{
@@ -447,6 +448,24 @@ section{
   display:none;
 }
 
+.carousel-indicators{}
+.carousel-indicators li{
+  margin:1px 3px;
+  border: 1px solid #999;
+  border:none;
+  background:#ddd;
+  background:rgb(209, 226, 255);
+}
+.carousel-indicators li:hover{
+  background:rgba(129, 177, 232, 0.75);
+}
+.carousel-indicators li.active{
+  margin:1px 3px;
+  background:#999;
+  width:10px;
+  height:10px;
+  background:rgba(129, 177, 232, 0.75);
+}
 .carousel-control{
   width:50%;
 }

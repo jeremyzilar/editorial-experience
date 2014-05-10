@@ -10,14 +10,12 @@ if (have_posts()) {
     the_post();?>
     <section id="about">
       <div class="container">
-        <?php edex_page_gallery();  ?>
+        <?php edex_page_gallery($post);  ?>
         <div class='row'>
           <div class="col-sm-6 col-sm-offset-3">
             <article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
               <header class="entry-header">
-                <h3 class="entry-title">
-                  <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-                </h3>
+                <h3 class="entry-title"><?php the_title(); ?></h3>
               </header><!-- .entry-header -->
 
               <div class="entry-content">
@@ -34,7 +32,7 @@ if (have_posts()) {
         </div>
       </div>
     </section>
-    <?php $i++;
+    <?php 
   }
   // include TDIR . '/nextprev.php';
 } else {

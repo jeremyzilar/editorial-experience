@@ -109,9 +109,9 @@ function edex_get_featured_image($size){
 
 /******    REWRITE THE GALLERIE FUNCTION FROM WORDPRESS   **********/
 
-add_shortcode('gallery', 'my_gallery_shortcode');
+add_shortcode('gallery', 'edex_gallery_shortcode');
 
-function my_gallery_shortcode($attr) {
+function edex_gallery_shortcode($attr) {
   $counter=0;
 //var_dump("Rewrite the shortcode gallery");
 
@@ -209,12 +209,24 @@ $output = apply_filters( 'gallery_style', "\n\t\t" . $gallery_div );
 
 $i = 0;
 $count=0;
-
+$c=0;
 
 $output .= <<<EOF
 
 EOF;
 $output .= "<div id='carousel-post-".$post->ID."' class='carousel slide' data-ride='carousel'>\n";
+$output .= "<ol class='carousel-indicators'>\n";
+
+foreach ( $attachments as $id => $attachment ) {
+  if ($c == 0) {
+    $output .= "<li data-target='#carousel-post-".$post->ID."' data-slide-to='".$c."' class='active'></li>\n";
+  } else {
+    $output .= "<li data-target='#carousel-post-".$post->ID."' data-slide-to='".$c."'></li>\n";
+  }
+  $c++;
+}
+$output .= "</ol>\n";
+
 $output .= "<div class='carousel-inner'>\n";
 foreach ( $attachments as $id => $attachment ) {
   $test = $attachments[$id];

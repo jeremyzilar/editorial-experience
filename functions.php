@@ -170,7 +170,7 @@ EOF;
 
 
 // Custom Page Gallery
-function edex_page_gallery(){
+function edex_page_gallery($post){
 	echo <<<EOF
 	<div class="row">
 		<div class="col-lg-10 col-sm-12 col-sm-offset-0 col-lg-offset-1">
