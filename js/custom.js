@@ -47,6 +47,18 @@
 
 
 
+    // interviews-block
+    var maxh = '';
+    $('.interviews-block .row').each(function () {
+      var h = $(this).height();
+      if (h > maxh) {
+        maxh = h;
+      }
+    });
+    $('.interviews-block .row').each(function () {
+      var h = $(this).height(maxh);
+    });
+
 
     // Twitter Button - - - - - - - - - - - - - - - - - - - - -
     $('.btn-twitter').click(function(e) {

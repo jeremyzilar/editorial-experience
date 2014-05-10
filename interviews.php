@@ -1,7 +1,7 @@
 <section id="interviews" class="">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+      <div class="interviews-block col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
         <h2 class="heading">Interviews and Case Studies with:</h2>
         <div class="row">
           <?php
