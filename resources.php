@@ -7,7 +7,9 @@ get_header(); ?>
 
 <section id="resources" class="">
   <div class="container">
-      <h2 class="heading">Resources</h2>
+      <div class="row">
+        <h2 class="heading">Resources</h2>
+      </div>
           <?php
             $taxonomy_objects = get_object_taxonomies( 'resource', 'objects' );
 

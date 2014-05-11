@@ -219,6 +219,9 @@ section{
 .resource-group{
   margin-top:20px;
 }
+#resources .blurb{
+  margin-bottom:50px;
+}
 #resources h4{
   margin-bottom:30px;
   padding:5px 0 0 0;
