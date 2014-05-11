@@ -124,8 +124,6 @@ function edex_entry_meta($id) {
 endif;
 
 
-
-
 // CATEGORY
 function edex_category(){
   if (!is_category()) {
@@ -136,9 +134,6 @@ function edex_category(){
     }
   }
 }
-
-
-
 
 // DATE
 if ( ! function_exists( 'edex_entry_date' ) ) :
