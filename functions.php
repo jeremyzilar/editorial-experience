@@ -190,6 +190,22 @@ function remove_shortcode_from($content) {
   return $content;
 }
 
+
+// This wraps the first word in the title with a <span> tag
+function edex_main_title() {
+	$title = get_bloginfo( 'name' );
+  $ARR_title = explode(" ", $title);
+  if(sizeof($ARR_title) > 1 ) {
+    $ARR_title[0] = "<span>".$ARR_title[0]."</span>";
+    echo implode(" ", $ARR_title);
+  } else {
+    echo $title;
+  }
+}
+
+
+
+
 add_filter( 'wp_title', 'baw_hack_wp_title_for_home' );
 function baw_hack_wp_title_for_home( $title )
 {

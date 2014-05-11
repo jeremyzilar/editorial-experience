@@ -135,8 +135,12 @@ section{
 
 #head{}
 
+#main_title span{
+  display:block;
+}
 #head h1{
   margin-top:0px;
+  margin-bottom:21px;
   font-size:52px;
   font-weight:900;
 }
@@ -145,14 +149,15 @@ section{
   color:#333;
 }
 #head .lead{
+  margin-bottom:15px;
   font-size:28px;
-  line-height:28px;
+  line-height:33px;
   font-weight:600;
+  width:75%;
 }
 
 #head .blurb{
   font-size:18px;
-  width:80%;
 }
 
 .banner{
@@ -551,9 +556,7 @@ XS
     margin-top:5px;
   }
   .interview{
-    margin-bottom:25px;
-    clear:both;
-    float:left;
+    margin-bottom:20px;
   }
   .interview img{
     margin-right:15px;
@@ -574,6 +577,20 @@ XS
 Tablets and up
 SM
 */
+@media screen and (max-width: 768px) {
+  .carousel-indicators{
+    bottom: -20px;
+    margin-left: -30%;
+    width:85%;
+    left:37%;
+  }
+}
+
+
+/*
+Tablets and up
+SM
+*/
 @media screen and (min-width: 768px) {
   .interview{
     margin-bottom:30px;
@@ -586,6 +603,10 @@ SM
     margin-bottom:70px;
     font-size:24px;
   }
+
+  #main_title span{
+    display:block;
+  }
 }
 
 /*
@@ -593,7 +614,12 @@ Tablets/desktops and up
 MD
 */
 @media screen and (min-width: 992px) {
-
+  #head .lead{
+    width:100%;
+  }
+  #main_title span{
+    display:inline;
+  }
 }
 
 
