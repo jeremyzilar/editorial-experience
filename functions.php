@@ -105,8 +105,8 @@ function edex_entry_meta($id) {
 	$tweet = get_the_title() . ' by @' . get_the_author_meta('twitter') . ' ' . get_permalink() . '?btn-twitter';
 	echo '<a data-msg="'. rawurlencode($tweet) .'" class="btn btn-xs btn-default btn-twitter" href="twitter://post?message='. rawurlencode($tweet) .'">Tweet</a> ';
   edex_entry_date();
-
-	echo ' <a class="hidden" href="http://edex.com" rel="author">Jeremy Zilar</a>';
+	$author = get_the_author();
+	echo '<span class="byline"> by ' . $author . '</span>';
 
 	if ( is_user_logged_in() ) {
 		$edit = get_edit_post_link($id);

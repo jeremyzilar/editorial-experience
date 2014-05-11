@@ -137,7 +137,7 @@ section{
 
 #head h1{
   margin-top:0px;
-  font-size:60px;
+  font-size:52px;
   font-weight:900;
 }
 #head h1 a{
@@ -346,6 +346,9 @@ section{
   font-size:13px;
 }
 
+.entry-meta .byline{
+  color:#b9b5b5;
+}
 .entry-meta .btn-twitter{
 	margin-right:3px;
 	padding-left:22px;
