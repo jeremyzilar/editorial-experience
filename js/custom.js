@@ -48,17 +48,27 @@
 
 
     // interviews-block
-    var maxh = '';
-    $('.interviews-block .row').each(function () {
-      var h = $(this).height();
-      if (h > maxh) {
-        maxh = h;
-      }
-    });
-    $('.interviews-block .row').each(function () {
-      var h = $(this).height(maxh);
-    });
+    function interviews(){
+      $(".mydiv UL").css("height", "");
+      var maxh = '';
+      $('.interviews-block .row').each(function () {
+        var h = $(this).css('height', '').height();
+        if (h > maxh) {
+          maxh = h;
+        }
+      });
+      $('.interviews-block .row').each(function () {
+        var h = $(this).height(maxh);
+      });
+      console.log('123');
+    }
+    interviews();
 
+
+    $( window ).resize(function() {
+      // console.log('123');
+      interviews();
+    });
 
     // Twitter Button - - - - - - - - - - - - - - - - - - - - -
     $('.btn-twitter').click(function(e) {
