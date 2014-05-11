@@ -1,4 +1,6 @@
-webteam-blog-theme
+editorial-experience
 ==================
 
-WordPress theme for webteam blog
+https://github.com/jeremyzilar/editorial-experience.git
+
+WordPress theme for the Designing the Editorial Experience Book

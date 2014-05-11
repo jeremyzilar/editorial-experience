@@ -1,5 +1,4 @@
 <?php
-
 include_once 'functions/wp_enqueue_script.php';
 include_once 'functions/loop.php';
 include_once 'functions/images.php';
@@ -98,15 +97,6 @@ function edex_get_link_url() {
 
 
 
-// Related
-function get_related(){
-  $source = get_post_meta( get_the_ID(), 'related_link_source', true );
-  $url = get_post_meta( get_the_ID(), 'related_link_url', true );
-	$related = '<p class="via"><img src="http://www.google.com/s2/favicons?domain='.$url.'"/><a href="'.$url.'" title="'.$source.'"><strong>'.$source.'</strong> '.substr($url,0,35).'...';$url.'</a></p>';
-	if (!empty($url)) {
-		return $related;
-	}
-}
 
 // Entry Meta
 if ( ! function_exists( 'edex_entry_meta' ) ) :
@@ -133,6 +123,9 @@ function edex_entry_meta($id) {
 }
 endif;
 
+
+
+
 // CATEGORY
 function edex_category(){
   if (!is_category()) {
@@ -143,6 +136,9 @@ function edex_category(){
     }
   }
 }
+
+
+
 
 // DATE
 if ( ! function_exists( 'edex_entry_date' ) ) :
@@ -208,66 +204,6 @@ function baw_hack_wp_title_for_home( $title )
   return $title;
 }
 
-
-
-// Background Image
-function get_bgimg(){
-	$bgimg = get_post_meta( get_the_ID(), 'art_bgimage', true );
-	if (!empty($bgimg)) {
-		return $bg = 'style=" background: url('.$bgimg.') no-repeat center fixed; background-size:100%;"';
-	} else {
-		return $bg = '';
-	}
-}
-
-// Text Color
-function get_textcolor(){
-  $textcolor = get_post_meta( get_the_ID(), 'art_text_color', true );
-
-	if ($textcolor == 'on') {
-		return $text = ' text-light';
-	} else {
-		return $text = '';
-	}
-}
-
-// Hide on Front
-function get_hidepost(){
-  $hidden = get_post_meta( get_the_ID(), 'art_hidden', true );
-	return $hidden;
-}
-
-
-// Year
-function get_art_year(){
-  $year = get_post_meta( get_the_ID(), 'art_label_years', true );
-	return $year;
-}
-
-// Medium
-function get_art_medium(){
-  $medium = get_post_meta( get_the_ID(), 'art_label_medium', true );
-	return $medium;
-}
-
-
-// Art Label
-
-function get_art_label(){
-	$title = get_the_title();
-	$year = ', ' . get_art_year();
-	$medium = (get_art_medium() !== '') ? '<p class="work-medium">'.get_art_medium().'</p>' : '';
-	$ex = (get_the_excerpt() !== '') ? '<p>'.get_the_excerpt().'</p>' : '';
-	echo <<<EOF
-		<div class="art-label">
-			<p class="work-title">$title$year</p>
-			$medium
-			$ex
-		</div>
-EOF;
-}
-
-
 // Add Fields to User Profiles
 function modify_contact_methods($profile_fields) {
 
@@ -282,7 +218,5 @@ function modify_contact_methods($profile_fields) {
 	return $profile_fields;
 }
 add_filter('user_contactmethods', 'modify_contact_methods');
-
-
 
 ?>

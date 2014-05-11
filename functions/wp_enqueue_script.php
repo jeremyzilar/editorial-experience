@@ -5,13 +5,11 @@ function scripts_styles() {
 	$q = 'v108';
 	// Le JS
 	wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), $q, true );
-	wp_enqueue_script('color-js', get_template_directory_uri() . '/js/jquery-color.js', array( 'jquery' ), $q, true );
 	wp_enqueue_script('moment-js', get_template_directory_uri() . '/js/moment.min.js', array( 'jquery' ), $q, true );
 	wp_enqueue_script('edex', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ), $q, true );
 
 	// Le CSS
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css',array(), $q);
-	wp_enqueue_style( 'openwebicons', get_template_directory_uri() . '/css/openwebicons-bootstrap.css',array(), $q);
 	wp_enqueue_style( 'edex', get_stylesheet_uri(),array(), $q);
 }
 add_action( 'wp_enqueue_scripts', 'scripts_styles' );

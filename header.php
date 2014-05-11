@@ -4,8 +4,8 @@
   <title><?php wp_title( '| Designing the Editorial Experience', true, 'right' ); ?></title>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
 
-	<meta name="keywords" content="Content Strategy, Design, Blogging, The New York Times, Jeremy Zilar" />
-	<meta name="description" content="Notes and Writings by Jeremy Zilar" />
+	<meta name="keywords" content="Web Design, Editorial Design, Newspaper Design, Publication Design, Magazine Design, Book Design, Sue Apfelbaum, Juliette Cezzar" />
+	<meta name="description" content="A Primer for Print, Web, and Mobile" />
 
   <link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

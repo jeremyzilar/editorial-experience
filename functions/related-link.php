@@ -50,7 +50,7 @@ function related_link( $post )
   		<label for="my_meta_box_check">Don't Check This.</label>
   	</p>
 	</div><!-- #related_links_box -->
-	<?php	
+	<?php
 }
 
 
@@ -59,32 +59,42 @@ function cd_meta_box_save( $post_id )
 {
 	// Bail if we're doing an auto save
 	if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
-	
+
 	// if our nonce isn't there, or we can't verify it, bail
 	if( !isset( $_POST['meta_box_nonce'] ) || !wp_verify_nonce( $_POST['meta_box_nonce'], 'my_meta_box_nonce' ) ) return;
-	
+
 	// if our current user can't edit this post, bail
 	if( !current_user_can( 'edit_post' ) ) return;
-	
+
 	// now we can actually save the data
-	$allowed = array( 
+	$allowed = array(
 		'a' => array( // on allow a tags
 			'href' => array() // and those anchords can only have href attribute
 		)
 	);
-	
+
 	// Probably a good idea to make sure your data is set
 	if( isset( $_POST['related_link_source'] ) )
 		update_post_meta( $post_id, 'related_link_source', wp_kses( $_POST['related_link_source'], $allowed ) );
-		
+
 	if( isset( $_POST['related_link_url'] ) )
 		update_post_meta( $post_id, 'related_link_url', wp_kses( $_POST['related_link_url'], $allowed ) );
-		
+
 	// This is purely my personal preference for saving checkboxes
 	$chk = ( isset( $_POST['my_meta_box_check'] ) && $_POST['my_meta_box_check'] ) ? 'on' : 'off';
 	update_post_meta( $post_id, 'my_meta_box_check', $chk );
 }
 
+
+// Related
+function get_related(){
+	$source = get_post_meta( get_the_ID(), 'related_link_source', true );
+	$url = get_post_meta( get_the_ID(), 'related_link_url', true );
+	$related = '<p class="via"><img src="http://www.google.com/s2/favicons?domain='.$url.'"/><a href="'.$url.'" title="'.$source.'"><strong>'.$source.'</strong> '.substr($url,0,35).'...';$url.'</a></p>';
+	if (!empty($url)) {
+		return $related;
+	}
+}
 
 
 ?>
