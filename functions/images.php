@@ -66,7 +66,57 @@ function image_wrapper( $html, $id, $caption, $title, $align, $url, $size, $alt 
   $code = '<div class="photo ' . $size . '">'. $i . $caption . '</div>';
   return $code;
 }
-add_filter( 'image_send_to_editor', 'image_wrapper', 10, 8 );
+// add_filter( 'image_send_to_editor', 'image_wrapper', 10, 8 );
+
+
+function wp_get_attachment( $attachment_id ) {
+  $a = str_replace( 'attachment_', '', $attachment_id );
+	$attachment = get_post($a);
+	return array(
+		'alt' => get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true ),
+		'caption' => $attachment->post_excerpt,
+		'description' => $attachment->post_content,
+		'href' => get_permalink( $attachment->ID ),
+		'src' => $attachment->guid,
+		'title' => $attachment->post_title
+	);
+}
+
+add_filter( 'img_caption_shortcode', 'my_img_caption_shortcode', 10, 3 );
+
+function my_img_caption_shortcode( $empty, $attr, $content ){
+  $attachment = wp_get_attachment($attr['id']);
+  // print_r($attachment['description']);
+
+	$attr = shortcode_atts( array(
+		'id'      => '',
+		'align'   => 'alignnone',
+		'width'   => '',
+		'caption' => ''
+	), $attr );
+
+	if ( 1 > (int) $attr['width'] || empty( $attr['caption'] ) ) {
+		return '';
+	}
+
+	if ( $attr['id'] ) {
+		$attr['id'] = 'id="' . esc_attr( $attr['id'] ) . '" ';
+	}
+
+	return '<figure ' . $attr['id']
+	. 'class="wp-caption ' . esc_attr( $attr['align'] ) . '" '
+	. 'style="max-width: ' . ( 10 + (int) $attr['width'] ) . 'px;">'
+	. do_shortcode( $content )
+	. '<p class="wp-caption-text">' . ' ' . $attachment['description'] . ' ' . $attr['caption'] . '</p>'
+	. '</figure>';
+}
+
+
+
+
+
+
+
 
 
 
