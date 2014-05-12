@@ -9,7 +9,10 @@ get_header(); ?>
   <div class="container">
       <div class="row">
         <h2 class="heading">Resources</h2>
-      </div>
+        <div class="col-sm-6 col-sm-offset-3">
+          <p class="blurb"><em>To be an editorial designer today means being prepared to learn continuously and relentlessly. Here are some of our recommended resources for ongoing education, which we'll add to and update over time.</em></p>
+        </div>
+        </div>
           <?php
             $taxonomy_objects = get_object_taxonomies( 'resource', 'objects' );
 
