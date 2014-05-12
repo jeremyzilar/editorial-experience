@@ -18,6 +18,8 @@
   <meta property="og:url" content="http://editorialexperience.com/" />
   <meta property="og:site_name" content="Designing the Editorial Experience" />
   <meta property="og:image" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_01.jpg" />
+  <meta property="og:image" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_08.jpg" />
+  <meta property="og:image" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_04.jpg" />
   <meta name="twitter:site" content="@designedex" />
   <meta name="twitter:image:src" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_01.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
