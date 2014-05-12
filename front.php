@@ -12,7 +12,7 @@ if (have_posts()) {
       <div class="container">
         <?php edex_page_gallery($post);  ?>
         <div class='row'>
-          <div class="col-sm-9 col-md-6 col-sm-offset-2 col-md-offset-3">
+          <div class="col-sm-9 col-md-8 col-lg-6 col-sm-offset-2 col-md-offset-2 col-lg-offset-3">
             <article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
               <header class="entry-header">
                 <h3 class="entry-title"><?php the_title(); ?></h3>
