@@ -20,9 +20,17 @@
   <meta property="og:image" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_01.jpg" />
   <meta property="og:image" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_08.jpg" />
   <meta property="og:image" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_04.jpg" />
-  <meta name="twitter:site" content="@designedex" />
-  <meta name="twitter:image:src" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_01.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
+
+
+  <meta name="twitter:card" content="gallery">
+  <meta name="twitter:site" content="@designedex">
+  <meta name="twitter:creator" content="">
+  <meta name="twitter:title" content="Designing the Editorial Experience">
+  <meta name="twitter:description" content="Interviews, case studies, and essential principles of editorial design across media, authored by Juliette Cezzar and Sue Apfelbaum.">
+  <meta name="twitter:image0:src" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_01.jpg">
+  <meta name="twitter:image1:src" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_08.jpg">
+  <meta name="twitter:image2:src" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_04.jpg">
+  <meta name="twitter:image3:src" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_03.jpg">
 
 
   <!-- Typekit -->
