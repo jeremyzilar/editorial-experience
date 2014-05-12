@@ -11,6 +11,18 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Designing the Editorial Experience" />
+  <meta property="og:description" content="A Primer for Print, Web, and Mobile" />
+  <meta property="og:url" content="http://editorialexperience.com/" />
+  <meta property="og:site_name" content="Designing the Editorial Experience" />
+  <meta property="og:image" content="http://editorialexperience.com/wp/wp-content/themes/editorial-experience/img/book/edex-cover.gif" />
+  <meta name="twitter:site" content="@designedex" />
+  <meta name="twitter:image:src" content="http://editorialexperience.com/wp/wp-content/themes/editorial-experience/img/book/edex-cover.gif" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+
   <!-- Typekit -->
   <!-- Registered with jc [at] juliettecezzar.com -->
 	<script type="text/javascript" src="//use.typekit.net/pzy6bux.js"></script>
