@@ -30,7 +30,7 @@
   <meta name="twitter:image0:src" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_01.jpg">
   <meta name="twitter:image1:src" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_08.jpg">
   <meta name="twitter:image2:src" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_04.jpg">
-  <meta name="twitter:image3:src" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_03.jpg">
+  <meta name="twitter:image3:src" content="http://editorialexperience.com/wp/wp-content/uploads/2014/05/edex_07.jpg">
 
 
   <!-- Typekit -->
