@@ -31,6 +31,13 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <p>For all inquires, speaking or press requests, please e-mail <a href="mailto:info@editorialexperience.com">info@editorialexperience.com</a>.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
